@@ -1,0 +1,117 @@
+/**
+ * Semantic color tokens (RGB triplets for Tailwind `rgb(var(--color-*) / <alpha>)`).
+ * Light defaults live on `html`; `html.dark` / `body.dark` share the dark palette (class toggled in JS).
+ * rules from other stylesheets.
+ */
+html {
+  --color-surface-container-low: 242 239 255;
+  --color-surface-container: 233 229 255;
+  --color-surface-tint: 8 70 237;
+  --color-surface-container-lowest: 255 255 255;
+  --color-secondary-container: 218 201 255;
+  --color-secondary: 106 56 211;
+  --color-secondary-fixed-dim: 205 185 255;
+  --color-surface-container-highest: 220 217 255;
+  --color-secondary-fixed: 218 201 255;
+  --color-surface-variant: 220 217 255;
+  --color-on-surface: 43 42 81;
+  --color-on-primary: 242 241 255;
+  --color-on-secondary-fixed-variant: 95 41 200;
+  --color-tertiary-fixed-dim: 151 238 0;
+  --color-surface-bright: 249 245 255;
+  --color-on-secondary-fixed: 64 0 155;
+  --color-inverse-surface: 10 8 47;
+  --color-primary-fixed-dim: 113 139 255;
+  --color-on-primary-fixed: 0 0 0;
+  --color-on-background: 43 42 81;
+  --color-error-container: 247 75 109;
+  --color-surface-container-high: 226 223 255;
+  --color-on-tertiary-container: 56 93 0;
+  --color-inverse-primary: 109 136 255;
+  --color-outline-variant: 171 169 215;
+  --color-inverse-on-surface: 154 153 198;
+  --color-on-tertiary-fixed-variant: 63 104 0;
+  --color-on-primary-fixed-variant: 0 32 126;
+  --color-on-secondary-container: 85 25 190;
+  --color-error: 180 19 64;
+  --color-surface-dim: 210 208 255;
+  --color-on-primary-container: 0 24 103;
+  --color-primary-container: 133 154 255;
+  --color-secondary-dim: 93 39 199;
+  --color-on-tertiary-fixed: 43 73 0;
+  --color-on-secondary: 248 240 255;
+  --color-tertiary-dim: 54 89 0;
+  --color-on-surface-variant: 88 87 129;
+  --color-primary-dim: 0 60 211;
+  --color-error-dim: 167 1 56;
+  --color-primary-fixed: 133 154 255;
+  --color-outline: 116 115 158;
+  --color-on-error-container: 81 0 23;
+  --color-tertiary-fixed: 161 254 0;
+  --color-tertiary-container: 161 254 0;
+  --color-tertiary: 62 102 0;
+  --color-background: 249 245 255;
+  --color-on-tertiary: 218 255 169;
+  --color-on-error: 255 239 239;
+  --color-surface: 249 245 255;
+  --color-primary: 8 70 237;
+
+  /* Paint the viewport from the root so theme tokens always drive the canvas (not UA defaults). */
+  min-height: 100dvh;
+  background-color: rgb(var(--color-background) / 1);
+}
+
+html.dark,
+body.dark {
+  --color-surface: 18 16 34;
+  --color-background: 18 16 34;
+  --color-surface-bright: 26 24 44;
+  --color-surface-dim: 12 11 22;
+  --color-on-surface: 232 230 248;
+  --color-on-background: 232 230 248;
+  --color-surface-container-low: 28 26 48;
+  --color-surface-container: 36 33 56;
+  --color-surface-container-high: 44 41 66;
+  --color-surface-container-highest: 54 50 78;
+  --color-surface-container-lowest: 22 20 38;
+  --color-surface-variant: 72 70 104;
+  --color-surface-tint: 140 162 255;
+  --color-on-surface-variant: 186 184 214;
+  --color-outline: 118 116 158;
+  --color-outline-variant: 76 74 108;
+  --color-primary: 138 162 255;
+  --color-primary-dim: 100 122 230;
+  --color-primary-container: 58 72 168;
+  --color-primary-fixed: 176 190 255;
+  --color-primary-fixed-dim: 120 138 230;
+  --color-on-primary: 16 18 42;
+  --color-on-primary-container: 222 228 255;
+  --color-on-primary-fixed: 255 255 255;
+  --color-on-primary-fixed-variant: 210 218 255;
+  --color-inverse-surface: 232 230 248;
+  --color-inverse-on-surface: 36 34 68;
+  --color-inverse-primary: 40 70 200;
+  --color-secondary: 196 182 255;
+  --color-secondary-dim: 150 132 240;
+  --color-secondary-fixed: 210 200 255;
+  --color-secondary-fixed-dim: 100 88 150;
+  --color-secondary-container: 68 58 112;
+  --color-on-secondary: 24 12 52;
+  --color-on-secondary-container: 232 224 255;
+  --color-on-secondary-fixed: 244 238 255;
+  --color-on-secondary-fixed-variant: 220 208 255;
+  --color-tertiary: 188 255 96;
+  --color-tertiary-dim: 130 200 48;
+  --color-tertiary-container: 72 100 32;
+  --color-tertiary-fixed: 188 255 96;
+  --color-tertiary-fixed-dim: 130 210 56;
+  --color-on-tertiary: 18 36 0;
+  --color-on-tertiary-container: 236 255 210;
+  --color-on-tertiary-fixed: 16 40 0;
+  --color-on-tertiary-fixed-variant: 220 255 180;
+  --color-error: 255 130 158;
+  --color-error-dim: 255 88 118;
+  --color-error-container: 88 28 48;
+  --color-on-error: 48 0 18;
+  --color-on-error-container: 255 224 232;
+}
