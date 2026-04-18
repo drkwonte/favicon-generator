@@ -1,4 +1,22 @@
-# React + TypeScript + Vite
+# Favify
+
+Portrait → stylized avatar → favicon ZIP in the browser (React, TypeScript, Vite). PWA is intentionally not used.
+
+## Cloudflare Pages
+
+Point production at the **`main`** branch head, not a pinned commit SHA. If the build log shows `HEAD is now at 91b6812…`, Cloudflare is still building only the first commit (which still listed `vite-plugin-pwa` and fails `npm ci` with Vite 8). In the Pages project, set **Production branch** to `main`, save, then **Retry deployment** (or trigger a new deploy from the latest `main`).
+
+| Setting | Value |
+| --- | --- |
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+| Root directory | `/` (repository root) |
+
+Copy `.env.example` to `.env` locally; set `VITE_*` vars in the Cloudflare project **Settings → Environment variables** for production builds if needed.
+
+---
+
+## React + TypeScript + Vite (template notes)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
