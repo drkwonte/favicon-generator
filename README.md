@@ -12,6 +12,8 @@ Point production at the **`main`** branch head, not a pinned commit SHA. If the 
 | Build output directory | `dist` |
 | Root directory | `/` (repository root) |
 
+`npm ci` on Pages requires a complete lockfile. `@emnapi/core` / `@emnapi/runtime` are listed as **devDependencies** so optional WASM-related peers stay in sync with Linux builders.
+
 Copy `.env.example` to `.env` locally; set `VITE_*` vars in the Cloudflare project **Settings → Environment variables** for production builds if needed.
 
 ---
