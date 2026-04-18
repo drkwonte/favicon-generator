@@ -4,7 +4,7 @@ Portrait → stylized avatar → favicon ZIP in the browser (React, TypeScript, 
 
 ## Cloudflare Pages
 
-Point production at the **`main`** branch head, not a pinned commit SHA. If the build log shows `HEAD is now at 91b6812…`, Cloudflare is still building only the first commit (which still listed `vite-plugin-pwa` and fails `npm ci` with Vite 8). In the Pages project, set **Production branch** to `main`, save, then **Retry deployment** (or trigger a new deploy from the latest `main`).
+**Build log `HEAD is now at …` must match the latest commit on `main`.** If it shows an older SHA (for example `91b6812` or `ca0cc1a`), the project is still deploying a pinned/rolled-back revision: open **Settings → Builds & deployments → Production branch**, set it to **`main`**, clear **build cache** if needed, then redeploy.
 
 | Setting | Value |
 | --- | --- |
@@ -12,7 +12,7 @@ Point production at the **`main`** branch head, not a pinned commit SHA. If the 
 | Build output directory | `dist` |
 | Root directory | `/` (repository root) |
 
-`npm ci` on Pages requires a complete lockfile. `@emnapi/core` / `@emnapi/runtime` are listed as **devDependencies** so optional WASM-related peers stay in sync with Linux builders.
+**Why there is no `package-lock.json` in git:** Cloudflare Pages runs `npm clean-install` (`npm ci`) whenever a lockfile is present. Vite’s optional native/WASM deps can make that lockfile disagree between Windows (local) and Linux (CI), which breaks `npm ci` with `EUSAGE` / “Missing … from lock file”. Without a committed lockfile, Pages falls back to **`npm install`**, which tolerates those graphs. Run `npm install` locally after cloning; do not commit `package-lock.json` (it is gitignored).
 
 Copy `.env.example` to `.env` locally; set `VITE_*` vars in the Cloudflare project **Settings → Environment variables** for production builds if needed.
 
