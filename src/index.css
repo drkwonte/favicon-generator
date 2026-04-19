@@ -176,6 +176,127 @@
     background-color: rgb(var(--color-surface-container-low) / 1);
     color: rgb(var(--color-on-surface) / 1);
   }
+
+  /* Learn articles: markdown is nested under `.learn-article-md`, not direct `.policy-prose` children. */
+  .policy-prose .learn-article-md > p {
+    margin-bottom: 1.125rem;
+    color: rgb(var(--color-on-surface-variant) / 1);
+  }
+
+  .policy-prose .learn-article-md > p:last-child {
+    margin-bottom: 0;
+  }
+
+  .policy-prose .learn-article-md > hr {
+    margin: 2.25rem 0;
+    border: 0;
+    border-top: 1px solid rgb(var(--color-outline-variant) / 0.45);
+  }
+
+  .policy-prose .learn-article-md > h2 {
+    margin-top: 3.25rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.65rem;
+    border-bottom: 1px solid rgb(var(--color-outline-variant) / 0.45);
+    font-family:
+      'Plus Jakarta Sans',
+      system-ui,
+      'Segoe UI',
+      Roboto,
+      sans-serif;
+    font-size: 1.375rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+    color: rgb(var(--color-on-surface) / 1);
+  }
+
+  .policy-prose .learn-article-md > h2:first-of-type {
+    margin-top: 0.35rem;
+  }
+
+  .policy-prose .learn-article-md > h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.65rem;
+    font-family:
+      'Plus Jakarta Sans',
+      system-ui,
+      'Segoe UI',
+      Roboto,
+      sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 1.35;
+    color: rgb(var(--color-on-surface) / 1);
+  }
+
+  .policy-prose .learn-article-md > h2 + h3 {
+    margin-top: 1.35rem;
+  }
+
+  .policy-prose .learn-article-md > ul,
+  .policy-prose .learn-article-md > ol {
+    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
+    padding-left: 1.35rem;
+    color: rgb(var(--color-on-surface-variant) / 1);
+  }
+
+  .policy-prose .learn-article-md > ul > li,
+  .policy-prose .learn-article-md > ol > li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0.25rem;
+  }
+
+  .policy-prose .learn-article-md > ul > li::marker {
+    color: rgb(var(--color-primary) / 0.85);
+  }
+
+  .policy-prose .learn-article-md > ol > li::marker {
+    font-weight: 600;
+    color: rgb(var(--color-on-surface-variant) / 0.9);
+  }
+
+  .policy-prose .learn-article-md blockquote {
+    margin: 1.5rem 0;
+    border-left: 4px solid rgb(var(--color-primary) / 0.55);
+    padding-left: 1rem;
+    color: rgb(var(--color-on-surface-variant) / 1);
+  }
+
+  .policy-prose .learn-article-md blockquote p {
+    margin-bottom: 0.75rem;
+  }
+
+  .policy-prose .learn-article-md blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+  .policy-prose .learn-article-md blockquote ul {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    padding-left: 1.25rem;
+  }
+
+  .policy-prose .learn-md-table th,
+  .policy-prose .learn-md-table td {
+    border: 1px solid rgb(var(--color-outline-variant) / 0.45);
+    padding: 0.65rem 0.85rem;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .policy-prose .learn-md-table th {
+    font-weight: 700;
+    color: rgb(var(--color-on-surface) / 1);
+    background-color: rgb(var(--color-surface-container-low) / 1);
+  }
+
+  .policy-prose .learn-md-table td {
+    color: rgb(var(--color-on-surface-variant) / 1);
+  }
 }
 
 @layer utilities {

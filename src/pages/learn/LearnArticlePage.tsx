@@ -7,7 +7,8 @@ import { Link, useParams } from 'react-router-dom'
 import { PolicyProse } from '../../components/layout/PolicyProse'
 import { StaticShell } from '../../components/layout/StaticShell'
 import { useAppPreferences } from '../../context/AppPreferencesContext'
-import { getLearnArticle, pickText } from '../../features/learn/learn.catalog'
+import { LearnMarkdownBody } from '../../features/learn/LearnMarkdownBody'
+import { getLearnArticle, pickArticleMarkdown, pickText } from '../../features/learn/learn.catalog'
 
 function setMetaDescription(content: string) {
   let el = document.querySelector('meta[name="description"]') as HTMLMetaElement | null
@@ -33,6 +34,7 @@ export function LearnArticlePage() {
 
   const titleText = resolved ? pickText(resolved.article.title, locale) : ''
   const summaryText = resolved ? pickText(resolved.article.summary, locale) : ''
+  const articleMarkdown = resolved ? pickArticleMarkdown(resolved.article, locale) : undefined
 
   useEffect(() => {
     if (!resolved) {
@@ -98,7 +100,11 @@ export function LearnArticlePage() {
         </p>
         <h2>{pickText(article.title, locale)}</h2>
         <p className="doc-lead">{pickText(article.summary, locale)}</p>
-        <p>{t('learn.articlePlaceholder')}</p>
+        {articleMarkdown ? (
+          <LearnMarkdownBody markdown={articleMarkdown} />
+        ) : (
+          <p>{t('learn.articlePlaceholder')}</p>
+        )}
       </PolicyProse>
     </StaticShell>
   )

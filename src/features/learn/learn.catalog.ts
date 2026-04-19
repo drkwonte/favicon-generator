@@ -2,6 +2,8 @@
  * Learn hub: SEO/GEO-oriented articles grouped by category.
  * Copy lives here (en/ko titles); long-form body can be filled in later per article.
  */
+import whatIsAFaviconEn from './bodies/en/what-is-a-favicon.md?raw'
+
 export type LearnLocaleText = {
   en: string
   ko: string
@@ -12,6 +14,8 @@ export type LearnArticle = {
   title: LearnLocaleText
   /** Short meta / lead for `<meta name="description">` and listing cards */
   summary: LearnLocaleText
+  /** Full article body (Markdown). Omit a locale until the translation is ready. */
+  bodyMarkdown?: Partial<LearnLocaleText>
 }
 
 export type LearnCategory = {
@@ -42,6 +46,9 @@ export const LEARN_CATEGORIES: LearnCategory[] = [
         summary: {
           en: 'What favicons are, where they appear, and why every site should ship one.',
           ko: '파비콘의 정의, 노출 위치, 모든 사이트에 필요한 이유를 한 번에 정리합니다.',
+        },
+        bodyMarkdown: {
+          en: whatIsAFaviconEn,
         },
       },
       {
@@ -250,6 +257,12 @@ export type LocaleCode = 'en' | 'ko'
 
 export function pickText(text: LearnLocaleText, locale: LocaleCode): string {
   return locale === 'ko' ? text.ko : text.en
+}
+
+export function pickArticleMarkdown(article: LearnArticle, locale: LocaleCode): string | undefined {
+  const raw = locale === 'ko' ? article.bodyMarkdown?.ko : article.bodyMarkdown?.en
+  if (typeof raw !== 'string' || !raw.trim()) return undefined
+  return raw.trim()
 }
 
 export function getLearnCategory(slug: string): LearnCategory | undefined {
