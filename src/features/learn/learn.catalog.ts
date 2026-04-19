@@ -3,6 +3,7 @@
  * Copy lives here (en/ko titles); long-form body can be filled in later per article.
  */
 import faviconFileFormatsEn from './bodies/en/favicon-file-formats.md?raw'
+import faviconFileFormatsKo from './bodies/ko/favicon-file-formats.md?raw'
 import whatIsAFaviconEn from './bodies/en/what-is-a-favicon.md?raw'
 import whatIsAFaviconKo from './bodies/ko/what-is-a-favicon.md?raw'
 
@@ -66,6 +67,7 @@ export const LEARN_CATEGORIES: LearnCategory[] = [
         },
         bodyMarkdown: {
           en: faviconFileFormatsEn,
+          ko: faviconFileFormatsKo,
         },
       },
       {
