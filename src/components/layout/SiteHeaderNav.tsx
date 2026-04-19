@@ -2,6 +2,7 @@
  * Primary site navigation: Guide + learn categories. Desktop inline links; mobile drawer.
  */
 import { useCallback, useEffect, useId, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { Link, NavLink } from 'react-router-dom'
 
 import { useAppPreferences } from '../../context/AppPreferencesContext'
@@ -89,49 +90,52 @@ export function SiteHeaderNav() {
         </button>
       </div>
 
-      {mobileOpen ? (
-        <div className="fixed inset-0 z-[60] md:hidden" role="presentation">
-          <button
-            type="button"
-            className="absolute inset-0 bg-inverse-surface/40 backdrop-blur-sm"
-            aria-label={t('nav.closeMenu')}
-            onClick={closeMobile}
-          />
-          <div
-            id={menuId}
-            className="absolute right-0 top-0 flex h-full w-[min(100%,20rem)] flex-col border-l border-outline-variant/30 bg-surface shadow-xl"
-          >
-            <div className="flex items-center justify-between border-b border-outline-variant/20 px-4 py-3">
-              <span className="font-label text-xs font-bold uppercase tracking-wide text-on-surface-variant">
-                {t('nav.menuHeading')}
-              </span>
+      {mobileOpen
+        ? createPortal(
+            <div className="fixed inset-0 z-[60] md:hidden" role="presentation">
               <button
                 type="button"
-                className="inline-flex h-9 w-9 items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high"
+                className="absolute inset-0 bg-inverse-surface/40 backdrop-blur-sm"
                 aria-label={t('nav.closeMenu')}
                 onClick={closeMobile}
+              />
+              <div
+                id={menuId}
+                className="absolute right-0 top-0 bottom-0 flex w-[min(100%,20rem)] min-h-0 flex-col border-l border-outline-variant/30 bg-surface shadow-xl"
               >
-                <span className="material-symbols-outlined text-[22px]">close</span>
-              </button>
-            </div>
-            <nav
-              className="flex flex-1 flex-col gap-1 overflow-y-auto p-3"
-              aria-label={t('nav.mainLabel')}
-            >
-              {renderNavLinks(closeMobile, 'stack')}
-            </nav>
-            <div className="border-t border-outline-variant/20 p-3">
-              <Link
-                to="/"
-                className="block rounded-lg px-3 py-2.5 text-sm font-semibold text-primary hover:bg-surface-container-high"
-                onClick={closeMobile}
-              >
-                {t('nav.home')}
-              </Link>
-            </div>
-          </div>
-        </div>
-      ) : null}
+                <div className="flex shrink-0 items-center justify-between border-b border-outline-variant/20 px-4 py-3">
+                  <span className="font-label text-xs font-bold uppercase tracking-wide text-on-surface-variant">
+                    {t('nav.menuHeading')}
+                  </span>
+                  <button
+                    type="button"
+                    className="inline-flex h-9 w-9 items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high"
+                    aria-label={t('nav.closeMenu')}
+                    onClick={closeMobile}
+                  >
+                    <span className="material-symbols-outlined text-[22px]">close</span>
+                  </button>
+                </div>
+                <nav
+                  className="flex min-h-0 flex-1 flex-col gap-1 overflow-y-auto overscroll-contain p-3"
+                  aria-label={t('nav.mainLabel')}
+                >
+                  {renderNavLinks(closeMobile, 'stack')}
+                </nav>
+                <div className="shrink-0 border-t border-outline-variant/20 p-3">
+                  <Link
+                    to="/"
+                    className="block rounded-lg px-3 py-2.5 text-sm font-semibold text-primary hover:bg-surface-container-high"
+                    onClick={closeMobile}
+                  >
+                    {t('nav.home')}
+                  </Link>
+                </div>
+              </div>
+            </div>,
+            document.body,
+          )
+        : null}
     </div>
   )
 }
