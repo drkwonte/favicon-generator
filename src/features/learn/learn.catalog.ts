@@ -2,6 +2,7 @@
  * Learn hub: SEO/GEO-oriented articles grouped by category.
  * Copy lives here (en/ko titles); long-form body can be filled in later per article.
  */
+import addFaviconHtmlEn from './bodies/en/add-favicon-html.md?raw'
 import faviconFileFormatsEn from './bodies/en/favicon-file-formats.md?raw'
 import faviconSizesEn from './bodies/en/favicon-sizes.md?raw'
 import whatIsAFaviconEn from './bodies/en/what-is-a-favicon.md?raw'
@@ -96,6 +97,9 @@ export const LEARN_CATEGORIES: LearnCategory[] = [
         summary: {
           en: 'Link tags, rel values, and cache-busting patterns that work everywhere.',
           ko: 'link 태그·rel 값·캐시 무력화 패턴까지 HTML로 적용하는 법을 다룹니다.',
+        },
+        bodyMarkdown: {
+          en: addFaviconHtmlEn,
         },
       },
       {
