@@ -8,6 +8,7 @@ import aiPhotoTo3dAvatarEn from './bodies/en/ai-photo-to-3d-avatar.md?raw'
 import aiPortraitStylesEn from './bodies/en/ai-portrait-styles.md?raw'
 import avatarFaviconPlatformsEn from './bodies/en/avatar-favicon-platforms.md?raw'
 import consistentWebIdentityEn from './bodies/en/consistent-web-identity.md?raw'
+import developersCreatorsPersonalFaviconEn from './bodies/en/developers-creators-personal-favicon.md?raw'
 import developersPersonalBrandingFaviconEn from './bodies/en/developers-personal-branding-favicon.md?raw'
 import faviconBrandingEn from './bodies/en/favicon-branding.md?raw'
 import faviconFileFormatsEn from './bodies/en/favicon-file-formats.md?raw'
@@ -333,6 +334,9 @@ export const LEARN_CATEGORIES: LearnCategory[] = [
         summary: {
           en: 'Trust, recall, and ownership in crowded tabs and link previews.',
           ko: '붐비는 탭·링크 프리뷰에서 신뢰·기억·소유감을 높이는 퍼스널 파비콘의 역할입니다.',
+        },
+        bodyMarkdown: {
+          en: developersCreatorsPersonalFaviconEn,
         },
       },
     ],
