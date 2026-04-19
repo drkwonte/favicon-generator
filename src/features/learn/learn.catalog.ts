@@ -3,8 +3,9 @@
  * Copy lives here (en/ko titles); long-form body can be filled in later per article.
  */
 import faviconFileFormatsEn from './bodies/en/favicon-file-formats.md?raw'
-import faviconFileFormatsKo from './bodies/ko/favicon-file-formats.md?raw'
+import faviconSizesEn from './bodies/en/favicon-sizes.md?raw'
 import whatIsAFaviconEn from './bodies/en/what-is-a-favicon.md?raw'
+import faviconFileFormatsKo from './bodies/ko/favicon-file-formats.md?raw'
 import whatIsAFaviconKo from './bodies/ko/what-is-a-favicon.md?raw'
 
 export type LearnLocaleText = {
@@ -79,6 +80,9 @@ export const LEARN_CATEGORIES: LearnCategory[] = [
         summary: {
           en: '16×16 through touch icons: a practical size checklist for 2025.',
           ko: '16×16부터 터치 아이콘까지, 실무에 필요한 크기만 추려 정리합니다.',
+        },
+        bodyMarkdown: {
+          en: faviconSizesEn,
         },
       },
       {
