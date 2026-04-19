@@ -24,6 +24,7 @@ import aiPhotoTo3dAvatarKo from './bodies/ko/ai-photo-to-3d-avatar.md?raw'
 import aiPortraitStylesKo from './bodies/ko/ai-portrait-styles.md?raw'
 import avatarFaviconPlatformsKo from './bodies/ko/avatar-favicon-platforms.md?raw'
 import consistentWebIdentityKo from './bodies/ko/consistent-web-identity.md?raw'
+import developersCreatorsPersonalFaviconKo from './bodies/ko/developers-creators-personal-favicon.md?raw'
 import developersPersonalBrandingFaviconKo from './bodies/ko/developers-personal-branding-favicon.md?raw'
 import faviconBrandingKo from './bodies/ko/favicon-branding.md?raw'
 import faviconFileFormatsKo from './bodies/ko/favicon-file-formats.md?raw'
@@ -337,6 +338,7 @@ export const LEARN_CATEGORIES: LearnCategory[] = [
         },
         bodyMarkdown: {
           en: developersCreatorsPersonalFaviconEn,
+          ko: developersCreatorsPersonalFaviconKo,
         },
       },
     ],
