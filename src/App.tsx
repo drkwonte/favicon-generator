@@ -3,6 +3,7 @@
  */
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 
+import { ScrollToTop } from './components/layout/ScrollToTop'
 import { AboutPage } from './pages/AboutPage'
 import { GuidePage } from './pages/GuidePage'
 import { HomePage } from './pages/HomePage'
@@ -14,6 +15,7 @@ import { TermsPage } from './pages/TermsPage'
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/guide" element={<GuidePage />} />

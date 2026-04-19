@@ -55,8 +55,7 @@ const en: MessagesRoot = {
     title: 'Start your transformation',
     subtitle:
       'Drag and drop your high-resolution portrait here. PNG, JPG, or WebP supported.',
-    privacyNote:
-      'Favicon files are built in your browser. Optional portrait styling may use a third party—see the Privacy Policy.',
+    privacyNote: 'Favicon files are built in your browser.',
   },
   flow: {
     selectPhoto: 'Select Photo',
@@ -283,8 +282,7 @@ const ko: MessagesRoot = {
     title: '시작하기',
     subtitle:
       '해상도가 충분한 인물 사진을 끌어다 놓거나 파일을 선택하세요. PNG, JPEG, WebP 형식을 지원합니다.',
-    privacyNote:
-      '파비콘 파일은 브라우저에서 생성됩니다. 선택적으로 적용되는 초상 스타일 기능은 제3자 서비스를 이용할 수 있으며, 자세한 내용은 개인정보처리방침을 참고해 주세요.',
+    privacyNote: '파비콘 파일은 브라우저에서 생성됩니다.',
   },
   flow: {
     selectPhoto: '사진 선택',
