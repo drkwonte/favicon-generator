@@ -8,6 +8,7 @@ import faviconBrandingEn from './bodies/en/favicon-branding.md?raw'
 import faviconFileFormatsEn from './bodies/en/favicon-file-formats.md?raw'
 import faviconSizesEn from './bodies/en/favicon-sizes.md?raw'
 import whatIsAFaviconEn from './bodies/en/what-is-a-favicon.md?raw'
+import whatIsDigitalAvatarEn from './bodies/en/what-is-digital-avatar.md?raw'
 import addFaviconHtmlKo from './bodies/ko/add-favicon-html.md?raw'
 import aiPhotoTo3dAvatarKo from './bodies/ko/ai-photo-to-3d-avatar.md?raw'
 import faviconBrandingKo from './bodies/ko/favicon-branding.md?raw'
@@ -158,6 +159,9 @@ export const LEARN_CATEGORIES: LearnCategory[] = [
         summary: {
           en: 'Digital avatars for profiles, games, and sites—and how favicons extend that identity.',
           ko: '프로필·게임·사이트에서의 디지털 아바타와 파비콘으로 정체성을 이어가는 방법입니다.',
+        },
+        bodyMarkdown: {
+          en: whatIsDigitalAvatarEn,
         },
       },
       {
