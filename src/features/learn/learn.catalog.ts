@@ -6,6 +6,7 @@ import addFaviconHtmlEn from './bodies/en/add-favicon-html.md?raw'
 import aiAvatarsPersonalBrandingEn from './bodies/en/ai-avatars-personal-branding.md?raw'
 import aiPhotoTo3dAvatarEn from './bodies/en/ai-photo-to-3d-avatar.md?raw'
 import aiPortraitStylesEn from './bodies/en/ai-portrait-styles.md?raw'
+import avatarFaviconPlatformsEn from './bodies/en/avatar-favicon-platforms.md?raw'
 import faviconBrandingEn from './bodies/en/favicon-branding.md?raw'
 import faviconFileFormatsEn from './bodies/en/favicon-file-formats.md?raw'
 import faviconFromPhotoEn from './bodies/en/favicon-from-photo.md?raw'
@@ -254,6 +255,9 @@ export const LEARN_CATEGORIES: LearnCategory[] = [
         summary: {
           en: 'Where each platform expects icons and how to upload your generated pack.',
           ko: '플랫폼별 아이콘 위치와 생성한 팩을 올리는 방법을 요약합니다.',
+        },
+        bodyMarkdown: {
+          en: avatarFaviconPlatformsEn,
         },
       },
       {
