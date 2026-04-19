@@ -6,6 +6,7 @@ import faviconFileFormatsEn from './bodies/en/favicon-file-formats.md?raw'
 import faviconSizesEn from './bodies/en/favicon-sizes.md?raw'
 import whatIsAFaviconEn from './bodies/en/what-is-a-favicon.md?raw'
 import faviconFileFormatsKo from './bodies/ko/favicon-file-formats.md?raw'
+import faviconSizesKo from './bodies/ko/favicon-sizes.md?raw'
 import whatIsAFaviconKo from './bodies/ko/what-is-a-favicon.md?raw'
 
 export type LearnLocaleText = {
@@ -83,6 +84,7 @@ export const LEARN_CATEGORIES: LearnCategory[] = [
         },
         bodyMarkdown: {
           en: faviconSizesEn,
+          ko: faviconSizesKo,
         },
       },
       {
