@@ -7,6 +7,7 @@ import aiAvatarsPersonalBrandingEn from './bodies/en/ai-avatars-personal-brandin
 import aiPhotoTo3dAvatarEn from './bodies/en/ai-photo-to-3d-avatar.md?raw'
 import aiPortraitStylesEn from './bodies/en/ai-portrait-styles.md?raw'
 import avatarFaviconPlatformsEn from './bodies/en/avatar-favicon-platforms.md?raw'
+import developersPersonalBrandingFaviconEn from './bodies/en/developers-personal-branding-favicon.md?raw'
 import faviconBrandingEn from './bodies/en/favicon-branding.md?raw'
 import faviconFileFormatsEn from './bodies/en/favicon-file-formats.md?raw'
 import faviconFromPhotoEn from './bodies/en/favicon-from-photo.md?raw'
@@ -271,6 +272,9 @@ export const LEARN_CATEGORIES: LearnCategory[] = [
         summary: {
           en: 'Why engineers should own their tab icon alongside GitHub and portfolio avatars.',
           ko: 'GitHub·포트폴리오와 함께 탭 아이콘까지 챙기는 개발자 브랜딩을 제안합니다.',
+        },
+        bodyMarkdown: {
+          en: developersPersonalBrandingFaviconEn,
         },
       },
     ],
