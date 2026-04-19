@@ -3,6 +3,7 @@
  * Copy lives here (en/ko titles); long-form body can be filled in later per article.
  */
 import whatIsAFaviconEn from './bodies/en/what-is-a-favicon.md?raw'
+import whatIsAFaviconKo from './bodies/ko/what-is-a-favicon.md?raw'
 
 export type LearnLocaleText = {
   en: string
@@ -49,6 +50,7 @@ export const LEARN_CATEGORIES: LearnCategory[] = [
         },
         bodyMarkdown: {
           en: whatIsAFaviconEn,
+          ko: whatIsAFaviconKo,
         },
       },
       {
