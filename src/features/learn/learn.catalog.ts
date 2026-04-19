@@ -12,6 +12,7 @@ import faviconSizesEn from './bodies/en/favicon-sizes.md?raw'
 import whatIsAFaviconEn from './bodies/en/what-is-a-favicon.md?raw'
 import whatIsDigitalAvatarEn from './bodies/en/what-is-digital-avatar.md?raw'
 import addFaviconHtmlKo from './bodies/ko/add-favicon-html.md?raw'
+import aiAvatarsPersonalBrandingKo from './bodies/ko/ai-avatars-personal-branding.md?raw'
 import aiPhotoTo3dAvatarKo from './bodies/ko/ai-photo-to-3d-avatar.md?raw'
 import aiPortraitStylesKo from './bodies/ko/ai-portrait-styles.md?raw'
 import faviconBrandingKo from './bodies/ko/favicon-branding.md?raw'
@@ -196,6 +197,7 @@ export const LEARN_CATEGORIES: LearnCategory[] = [
         },
         bodyMarkdown: {
           en: aiAvatarsPersonalBrandingEn,
+          ko: aiAvatarsPersonalBrandingKo,
         },
       },
     ],
