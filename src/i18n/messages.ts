@@ -13,8 +13,24 @@ const en: MessagesRoot = {
     guideTitle: 'Guide — Favify',
     privacyTitle: 'Privacy Policy — Favify',
     termsTitle: 'Terms of Use — Favify',
+    learnNotFoundTitle: 'Not found — Favify',
   },
-  nav: { guide: 'Guide' },
+  nav: {
+    guide: 'Guide',
+    mainLabel: 'Main pages',
+    openMenu: 'Open navigation menu',
+    closeMenu: 'Close navigation menu',
+    menuHeading: 'Menu',
+    home: 'Home',
+  },
+  learn: {
+    seriesLabel: 'Article series',
+    categoryIntro: 'Detailed guides will be published here over time.',
+    articlePlaceholder:
+      'This page is a structured placeholder for SEO. The full article body will be added next.',
+    notFoundCategory: 'That topic could not be found.',
+    notFoundArticle: 'That article could not be found.',
+  },
   header: {
     useLight: 'Switch to light theme',
     useDark: 'Switch to dark theme',
@@ -230,8 +246,24 @@ const ko: MessagesRoot = {
     guideTitle: '가이드 — Favify',
     privacyTitle: '개인정보처리방침 — Favify',
     termsTitle: '이용약관 — Favify',
+    learnNotFoundTitle: '찾을 수 없음 — Favify',
   },
-  nav: { guide: '가이드' },
+  nav: {
+    guide: '가이드',
+    mainLabel: '주요 페이지',
+    openMenu: '메뉴 열기',
+    closeMenu: '메뉴 닫기',
+    menuHeading: '메뉴',
+    home: '홈',
+  },
+  learn: {
+    seriesLabel: '글 시리즈',
+    categoryIntro: '상세 가이드는 이후에 순차적으로 채워 넣을 예정입니다.',
+    articlePlaceholder:
+      'SEO용으로 구조만 잡아 둔 페이지입니다. 본문은 곧 추가됩니다.',
+    notFoundCategory: '해당 주제를 찾을 수 없습니다.',
+    notFoundArticle: '해당 글을 찾을 수 없습니다.',
+  },
   header: {
     useLight: '라이트 테마로 전환',
     useDark: '다크 테마로 전환',
