@@ -3,6 +3,7 @@
  * Copy lives here (en/ko titles); long-form body can be filled in later per article.
  */
 import addFaviconHtmlEn from './bodies/en/add-favicon-html.md?raw'
+import faviconBrandingEn from './bodies/en/favicon-branding.md?raw'
 import faviconFileFormatsEn from './bodies/en/favicon-file-formats.md?raw'
 import faviconSizesEn from './bodies/en/favicon-sizes.md?raw'
 import whatIsAFaviconEn from './bodies/en/what-is-a-favicon.md?raw'
@@ -113,6 +114,9 @@ export const LEARN_CATEGORIES: LearnCategory[] = [
         summary: {
           en: 'Tabs, bookmarks, and mobile home screens: favicons as micro-brand assets.',
           ko: '탭·북마크·모바일 홈 화면에서 파비콘이 브랜드 자산으로 작동하는 이유입니다.',
+        },
+        bodyMarkdown: {
+          en: faviconBrandingEn,
         },
       },
     ],
