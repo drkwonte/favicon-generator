@@ -8,6 +8,7 @@ import aiPhotoTo3dAvatarEn from './bodies/en/ai-photo-to-3d-avatar.md?raw'
 import aiPortraitStylesEn from './bodies/en/ai-portrait-styles.md?raw'
 import faviconBrandingEn from './bodies/en/favicon-branding.md?raw'
 import faviconFileFormatsEn from './bodies/en/favicon-file-formats.md?raw'
+import faviconFromPhotoEn from './bodies/en/favicon-from-photo.md?raw'
 import faviconSizesEn from './bodies/en/favicon-sizes.md?raw'
 import whatIsAFaviconEn from './bodies/en/what-is-a-favicon.md?raw'
 import whatIsDigitalAvatarEn from './bodies/en/what-is-digital-avatar.md?raw'
@@ -220,6 +221,9 @@ export const LEARN_CATEGORIES: LearnCategory[] = [
         summary: {
           en: 'The fastest path through Favify from upload to ZIP export.',
           ko: 'Favify에서 업로드부터 ZIP보내기까지 가장 빠른 경로를 안내합니다.',
+        },
+        bodyMarkdown: {
+          en: faviconFromPhotoEn,
         },
       },
       {
