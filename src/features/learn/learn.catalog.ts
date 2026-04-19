@@ -12,6 +12,7 @@ import faviconBrandingEn from './bodies/en/favicon-branding.md?raw'
 import faviconFileFormatsEn from './bodies/en/favicon-file-formats.md?raw'
 import faviconFromPhotoEn from './bodies/en/favicon-from-photo.md?raw'
 import faviconSizesEn from './bodies/en/favicon-sizes.md?raw'
+import firstImpressionFaviconEn from './bodies/en/first-impression-favicon.md?raw'
 import portraitTipsAiAvatarEn from './bodies/en/portrait-tips-ai-avatar.md?raw'
 import whatIsAFaviconEn from './bodies/en/what-is-a-favicon.md?raw'
 import whatIsDigitalAvatarEn from './bodies/en/what-is-digital-avatar.md?raw'
@@ -299,6 +300,9 @@ export const LEARN_CATEGORIES: LearnCategory[] = [
         summary: {
           en: 'Why the smallest asset sets tone before your hero section loads.',
           ko: '히어로가 로드되기 전, 가장 작은 자산이 톤을 만든다는 관점을 풀어냅니다.',
+        },
+        bodyMarkdown: {
+          en: firstImpressionFaviconEn,
         },
       },
       {
