@@ -4,6 +4,7 @@
  */
 import addFaviconHtmlEn from './bodies/en/add-favicon-html.md?raw'
 import aiPhotoTo3dAvatarEn from './bodies/en/ai-photo-to-3d-avatar.md?raw'
+import aiPortraitStylesEn from './bodies/en/ai-portrait-styles.md?raw'
 import faviconBrandingEn from './bodies/en/favicon-branding.md?raw'
 import faviconFileFormatsEn from './bodies/en/favicon-file-formats.md?raw'
 import faviconSizesEn from './bodies/en/favicon-sizes.md?raw'
@@ -175,6 +176,9 @@ export const LEARN_CATEGORIES: LearnCategory[] = [
         summary: {
           en: 'Style families, prompt patterns, and what works best for small-tab favicons.',
           ko: '스타일 종류·프롬프트 패턴·작은 탭 파비콘에 잘 맞는 스타일까지 정리합니다.',
+        },
+        bodyMarkdown: {
+          en: aiPortraitStylesEn,
         },
       },
       {
