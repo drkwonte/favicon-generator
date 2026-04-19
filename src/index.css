@@ -55,6 +55,26 @@
     color: rgb(var(--color-on-surface-variant) / 1);
   }
 
+  .policy-prose > h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family:
+      'Plus Jakarta Sans',
+      system-ui,
+      'Segoe UI',
+      Roboto,
+      sans-serif;
+    font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    color: rgb(var(--color-on-surface) / 1);
+  }
+
+  .policy-prose > h1 + .doc-lead {
+    margin-top: 0;
+  }
+
   .policy-prose > h2 {
     margin-top: 3.25rem;
     margin-bottom: 1rem;
@@ -147,10 +167,75 @@
     color: rgb(var(--color-on-surface) / 1);
   }
 
+  .policy-prose li pre {
+    margin-top: 0.85rem;
+    margin-bottom: 0.35rem;
+    padding: 1rem 1.1rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgb(var(--color-outline-variant) / 0.45);
+    background-color: rgb(var(--color-surface-container-low) / 1);
+    font-size: 0.75rem;
+    line-height: 1.6;
+    overflow-x: auto;
+    color: rgb(var(--color-on-surface) / 1);
+  }
+
   @media (min-width: 640px) {
     .policy-prose > pre {
       font-size: 0.875rem;
     }
+
+    .policy-prose li pre {
+      font-size: 0.8125rem;
+    }
+  }
+
+  .policy-prose .guide-table-wrap {
+    margin-top: 0.75rem;
+    margin-bottom: 2.25rem;
+    overflow-x: auto;
+    border-radius: 0.75rem;
+    border: 1px solid rgb(var(--color-outline-variant) / 0.45);
+  }
+
+  .policy-prose table.guide-zip-table {
+    width: 100%;
+    min-width: 22rem;
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    color: rgb(var(--color-on-surface-variant) / 1);
+  }
+
+  .policy-prose table.guide-zip-table th,
+  .policy-prose table.guide-zip-table td {
+    padding: 0.65rem 0.9rem;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid rgb(var(--color-outline-variant) / 0.35);
+  }
+
+  .policy-prose table.guide-zip-table tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .policy-prose table.guide-zip-table th {
+    font-family:
+      'Plus Jakarta Sans',
+      system-ui,
+      'Segoe UI',
+      Roboto,
+      sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: rgb(var(--color-on-surface) / 0.88);
+    background-color: rgb(var(--color-surface-container-low) / 1);
+  }
+
+  .policy-prose table.guide-zip-table td code {
+    font-size: 0.82em;
   }
 
   .policy-prose strong {

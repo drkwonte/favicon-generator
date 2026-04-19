@@ -10,7 +10,7 @@ const en: MessagesRoot = {
   meta: {
     homeTitle: 'Favify',
     aboutTitle: 'About — Favify',
-    guideTitle: 'Guide — Favify',
+    guideTitle: 'How to Use Favify — Favify',
     privacyTitle: 'Privacy Policy — Favify',
     termsTitle: 'Terms of Use — Favify',
     learnNotFoundTitle: 'Not found — Favify',
@@ -179,63 +179,59 @@ const en: MessagesRoot = {
     contactPBefore: 'Legal notices:',
   },
   guide: {
+    pageTitle: 'How to Use Favify',
     intro:
-      'How this site’s tool works, what you get in the ZIP, and answers to common favicon questions.',
-    howH: 'How to use Favify',
-    step1:
-      'Upload a portrait. Drag and drop or use “Select Photo”. We accept PNG, JPEG, and WebP (up to 10 MB).',
-    step2:
-      'Continue to preview. We prepare a square crop you can review. Deployments that include optional portrait styling may show an extra stylized look—otherwise you work from the crop alone.',
-    step3:
-      'Generate favicons. When the preview looks right, run Generate Favicons. All resizing and packaging happen in your browser.',
-    step4:
-      'Download the ZIP. Grab the package and extract it to your site’s public root (or another path you configure consistently with the HTML snippet).',
-    step5:
-      'Add the tags to your site. Copy the snippet from the export step into your page <head>.',
-    zipH: 'What’s inside the download',
-    zipIntro: 'Each ZIP is built to match common favicon and PWA conventions:',
-    zipIco:
-      'favicon.ico — multi-size ICO (16×16, 32×32, 48×48) for legacy browsers and defaults.',
-    zipPng:
-      'PNG icons — 16×16, 32×32, Apple touch 180×180, and Android Chrome 192×192 and 512×512.',
-    zipManifest:
-      'site.webmanifest — starter web app manifest pointing at the larger icons.',
-    htmlH: 'HTML snippet (reference)',
-    htmlP:
-      'Paths assume files live at your site root. Adjust href values if you use a subdirectory.',
-    whyH: 'Why use Favify?',
-    why1: 'No account for the main flow on the home page.',
-    why2:
-      'Browser-side packaging for the favicon build so your source image stays on your device for that step.',
-    why3: 'One download with ICO, PNG set, manifest, and ready-to-paste <head> links.',
-    tipsH: 'Tips for the best results',
-    tip1:
-      'Use a clear, well-lit portrait with your face centered; avoid heavy crops or tiny faces in the frame.',
-    tip2:
-      'Prefer at least about 512×512 source resolution when possible; larger sources give sharper downscales for small tab icons.',
+      'Everything you need to generate your favicon package — from upload to install.',
+    stepsH: 'Steps',
+    step1Bold: 'Upload a portrait',
+    step1Body:
+      'Drag and drop your photo, or click Select Photo. Accepted formats: PNG, JPEG, WebP (max 10 MB).',
+    step2Bold: 'Preview & crop',
+    step2Body:
+      'Review the square-crop preview. Some deployments include an optional portrait styling step — if available, you’ll see a stylized look before proceeding.',
+    step3Bold: 'Generate favicons',
+    step3Body:
+      'When the preview looks good, click Generate Favicons. All resizing and packaging run entirely in your browser — your image never leaves your device.',
+    step4Bold: 'Download the ZIP',
+    step4Body:
+      'Download the package and extract it to your site’s public root (or whichever path you reference in your HTML).',
+    step5Bold: 'Add the tags to your <head>',
+    step5Body:
+      'Copy the snippet below into your page <head>. Adjust href paths if your files are in a subdirectory.',
+    zipH: 'What’s Inside the ZIP',
+    zipColFile: 'File',
+    zipColDesc: 'Description',
+    zipDescIco:
+      'Multi-size ICO (16×16, 32×32, 48×48) — legacy browsers & defaults',
+    zipDesc16: 'Standard tab icon',
+    zipDesc32: 'Higher-DPI tab icon',
+    zipDescApple: '180×180 — iOS home screen',
+    zipDescAndroid192: 'Android home screen',
+    zipDescAndroid512: 'PWA splash screen',
+    zipDescManifest: 'Web app manifest pointing to the large icons',
+    tipsH: 'Tips for Best Results',
+    tip1: 'Use a clear, well-lit portrait with your face centered in the frame.',
+    tip2: 'Use a source image of at least 512×512 px for sharp small icons.',
     tip3:
-      'Keep important detail inside the center square; extreme wide shots may lose context when we square-crop.',
-    faqH: 'Frequently asked questions',
-    faq1H: 'What is a favicon?',
+      'Keep important detail inside the center square — wide shots may lose context after cropping.',
+    faqH: 'FAQ',
+    faq1H: 'Which image formats can I upload?',
     faq1P:
-      'A favicon is the small icon browsers show on tabs, bookmarks, and history. Good favicons help people spot your site quickly. Modern sites usually ship several PNG sizes plus a legacy ICO file.',
-    faq2H: 'Which image formats can I upload?',
+      'PNG, JPEG, and WebP. SVG is not supported — rasterize first if your source is vector-only.',
+    faq2H: 'Where should I put the files?',
     faq2P:
-      'PNG, JPEG, and WebP. SVG upload is not supported in this tool—rasterize first if your brand mark is vector-only.',
-    faq3H: 'Where should I put the files?',
-    faq3P:
-      'The default snippet expects icons at the site root (same folder as your homepage). If you publish under a subpath, update each href to match.',
-    faq4H: 'Is this free?',
+      'Place them in your site root by default. If you publish under a subpath, update each href accordingly.',
+    faq3H: 'Is this free?',
+    faq3PBefore:
+      'Yes, free to use for generating packages from your own images, subject to the ',
+    faq3PAfter: '.',
+    faq4H: 'Do you store my photos?',
     faq4PBefore:
-      'The tool on this site is free to use for generating packages from your own images, subject to the',
+      'No. Favicon resizing and ZIP creation run entirely in your browser. See the ',
+    faq4PMid: ' for details on optional portrait styling.',
     termsLink: 'Terms of Use',
-    faq4PMid: '. For how data is handled, read the',
     privacyLink: 'Privacy Policy',
-    faq4PAfter: '.',
-    faq5H: 'Do you store my photos on your servers?',
-    faq5PBefore:
-      'Favicon resizing and ZIP creation run in your browser. Optional portrait styling, when enabled for a given deployment, is described in the',
-    faq5PAfter: '.',
+    cta: '→ Create your favicon now',
   },
 }
 
@@ -243,7 +239,7 @@ const ko: MessagesRoot = {
   meta: {
     homeTitle: 'Favify',
     aboutTitle: '소개 — Favify',
-    guideTitle: '가이드 — Favify',
+    guideTitle: 'Favify 사용 방법 — Favify',
     privacyTitle: '개인정보처리방침 — Favify',
     termsTitle: '이용약관 — Favify',
     learnNotFoundTitle: '찾을 수 없음 — Favify',
@@ -410,62 +406,59 @@ const ko: MessagesRoot = {
     contactPBefore: '법적 문의:',
   },
   guide: {
+    pageTitle: 'Favify 사용 방법',
     intro:
-      '이 페이지에서는 이 사이트의 도구를 어떻게 쓰는지, ZIP 안에 무엇이 들어 있는지, 그리고 파비콘에 대해 자주 묻는 질문을 정리했습니다.',
-    howH: 'Favify 사용 방법',
-    step1:
-      '인물 사진을 올립니다. 끌어다 놓거나 “사진 선택”을 누르세요. PNG, JPEG, WebP를 지원하며, 파일당 최대 10MB까지입니다.',
-    step2:
-      '“미리보기로 이동”을 누르면 정사각형으로 잘린 미리보기를 준비합니다. 배포 설정에 따라 AI로 스타일을 입힌 결과가 나올 수도 있고, 그렇지 않으면 크롭된 이미지가 그대로 다음 단계로 넘어갑니다.',
-    step3:
-      '미리보기가 괜찮다면 “파비콘 만들기”를 누릅니다. 크기 조정과 묶음 작업은 모두 브라우저에서 이루어집니다.',
-    step4:
-      'ZIP 파일을 내려받아, 웹사이트의 공개 디렉터리(또는 HTML 스니펫의 경로와 맞춰 둔 위치)에 풀어 넣습니다.',
-    step5:
-      '마지막 화면에 나온 HTML 조각을 복사해, 사이트의 <head> 안에 붙여 넣습니다.',
-    zipH: 'ZIP에 들어 있는 것',
-    zipIntro: 'ZIP은 흔히 쓰이는 파비콘·PWA 관행에 맞춰 다음을 담습니다.',
-    zipIco:
-      'favicon.ico — 구형 브라우저를 위한 ICO(16×16, 32×32, 48×48 멀티 사이즈).',
-    zipPng:
-      'PNG 아이콘 — 16×16, 32×32, Apple Touch용 180×180, Android Chrome용 192×192와 512×512.',
-    zipManifest:
-      'site.webmanifest — 큰 아이콘을 가리키는 웹 앱 매니페스트 초안.',
-    htmlH: 'HTML 조각(참고용)',
-    htmlP:
-      '기본 경로는 사이트 루트를 가정합니다. 하위 경로에 올릴 경우에는 각 href를 실제 위치에 맞게 고쳐 주세요.',
-    whyH: 'Favify를 쓰는 이유',
-    why1: '홈 화면의 주된 흐름은 계정 없이 이용할 수 있습니다.',
-    why2: '파비콘 묶음을 만드는 동안, 원본 이미지는 그 단계에서 기기 밖으로 나가지 않습니다.',
-    why3: 'ICO·PNG 묶음·매니페스트·<head>에 넣을 링크를 한 번에 받을 수 있습니다.',
+      '인물 사진 업로드부터 사이트에 붙이기까지, 파비콘 패키지를 만드는 데 필요한 내용을 한곳에 모았습니다.',
+    stepsH: '단계',
+    step1Bold: '인물 사진 올리기',
+    step1Body:
+      '사진을 끌어다 놓거나 「사진 선택」을 누르세요. PNG, JPEG, WebP를 지원하며 최대 10MB까지입니다.',
+    step2Bold: '미리보기 및 크롭',
+    step2Body:
+      '정사각형 크롭 미리보기를 확인하세요. 배포 설정에 따라 선택적인 초상 스타일 단계가 있을 수 있으며, 제공되는 경우 다음 단계로 넘어가기 전에 스타일이 적용된 모습을 볼 수 있습니다.',
+    step3Bold: '파비콘 생성',
+    step3Body:
+      '미리보기가 괜찮으면 「파비콘 만들기」를 누르세요. 크기 조정과 패키징은 모두 브라우저 안에서 이루어지며, 이미지는 이 단계에서 기기 밖으로 전송되지 않습니다.',
+    step4Bold: 'ZIP 내려받기',
+    step4Body:
+      '패키지를 내려받아 사이트의 공개 루트(또는 HTML에서 참조하는 경로)에 풀어 넣습니다.',
+    step5Bold: '<head>에 태그 넣기',
+    step5Body:
+      '아래 스니펫을 페이지의 <head> 안에 붙여 넣으세요. 파일이 하위 폴더에 있다면 각 href 경로를 실제 위치에 맞게 수정하세요.',
+    zipH: 'ZIP 안에 무엇이 있나요',
+    zipColFile: '파일',
+    zipColDesc: '설명',
+    zipDescIco:
+      '멀티 사이즈 ICO(16×16, 32×32, 48×48) — 구형 브라우저와 기본 아이콘',
+    zipDesc16: '표준 탭 아이콘',
+    zipDesc32: '고해상도 탭 아이콘',
+    zipDescApple: '180×180 — iOS 홈 화면',
+    zipDescAndroid192: '안드로이드 홈 화면',
+    zipDescAndroid512: 'PWA 스플래시 화면',
+    zipDescManifest: '큰 아이콘을 가리키는 웹 앱 매니페스트',
     tipsH: '좋은 결과를 위한 팁',
-    tip1:
-      '얼굴이 화면 중앙에 오도록 밝고 선명한 인물 사진을 쓰세요. 얼굴이 너무 작게 잡히거나 과하게 잘린 사진은 피하는 것이 좋습니다.',
-    tip2:
-      '가능하면 한 변이 512픽셀 이상인 원본을 권장합니다. 여유 있는 원본이 작은 탭 아이콘에서 더 또렷하게 보입니다.',
+    tip1: '얼굴이 프레임 중앙에 오도록 밝고 선명한 인물 사진을 사용하세요.',
+    tip2: '작은 아이콘도 또렷하게 보이도록 최소 512×512 픽셀 이상의 원본을 권장합니다.',
     tip3:
-      '중요한 부분은 정사각형 가운데에 두세요. 좌우로 매우 넓게 퍼진 구도는 정사각형으로 자를 때 내용이 잘릴 수 있습니다.',
-    faqH: '자주 묻는 질문',
-    faq1H: '파비콘이 무엇인가요?',
+      '중요한 디테일은 가운데 정사각형 안에 두세요. 넓게 퍼진 구도는 크롭 후 맥락이 잘릴 수 있습니다.',
+    faqH: 'FAQ',
+    faq1H: '어떤 이미지 형식을 올릴 수 있나요?',
     faq1P:
-      '파비콘은 브라우저 탭, 북마크, 방문 기록 등에 보이는 작은 아이콘입니다. 잘 만든 파비콘은 사이트를 한눈에 알아보게 해 줍니다. 요즘은 여러 크기의 PNG와, 예전 브라우저를 위한 ICO를 함께 쓰는 경우가 많습니다.',
-    faq2H: '어떤 이미지 형식을 올릴 수 있나요?',
+      'PNG, JPEG, WebP입니다. SVG는 지원하지 않습니다. 벡터만 있다면 래스터 이미지로 변환한 뒤 올려 주세요.',
+    faq2H: '파일은 어디에 두면 되나요?',
     faq2P:
-      'PNG, JPEG, WebP입니다. 이 도구는 SVG 업로드를 지원하지 않습니다. 벡터 로고라면 래스터 이미지로 변환한 뒤 올려 주세요.',
-    faq3H: '파일은 어디에 두면 되나요?',
-    faq3P:
-      '기본 HTML 조각은 아이콘이 사이트 루트(첫 화면과 같은 공개 폴더)에 있다고 가정합니다. 하위 경로에 두었다면 각 href를 그에 맞게 수정해야 합니다.',
-    faq4H: '무료인가요?',
+      '기본적으로 사이트 루트에 두면 됩니다. 하위 경로에 게시하는 경우 각 href를 그에 맞게 바꾸세요.',
+    faq3H: '무료인가요?',
+    faq3PBefore:
+      '네. 본인 이미지로 패키지를 생성하는 한 무료로 이용할 수 있으며, 조건은 ',
+    faq3PAfter: '을 따릅니다.',
+    faq4H: '사진이 서버에 저장되나요?',
     faq4PBefore:
-      '본인의 이미지로 패키지를 만드는 한, 이 사이트의 도구는 무료로 쓸 수 있습니다. 이용 조건은 ',
+      '아니요. 파비콘 리사이즈와 ZIP 생성은 모두 브라우저에서 처리됩니다. 선택적인 초상 스타일에 대해서는 ',
+    faq4PMid: '을 참고하세요.',
     termsLink: '이용약관',
-    faq4PMid: '을, 개인정보 처리에 관해서는 ',
     privacyLink: '개인정보처리방침',
-    faq4PAfter: '을 각각 확인해 주세요.',
-    faq5H: '사진이 서버에 저장되나요?',
-    faq5PBefore:
-      '파비콘 크기 조정과 ZIP 만들기는 브라우저에서 이루어집니다. 선택적인 초상 스타일 기능은 배포마다 다를 수 있으며, 그 내용은 ',
-    faq5PAfter: '에 적어 두었습니다.',
+    cta: '→ 지금 파비콘 만들기',
   },
 }
 
