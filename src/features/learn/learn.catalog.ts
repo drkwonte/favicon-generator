@@ -3,6 +3,7 @@
  * Copy lives here (en/ko titles); long-form body can be filled in later per article.
  */
 import addFaviconHtmlEn from './bodies/en/add-favicon-html.md?raw'
+import aiAvatarsPersonalBrandingEn from './bodies/en/ai-avatars-personal-branding.md?raw'
 import aiPhotoTo3dAvatarEn from './bodies/en/ai-photo-to-3d-avatar.md?raw'
 import aiPortraitStylesEn from './bodies/en/ai-portrait-styles.md?raw'
 import faviconBrandingEn from './bodies/en/favicon-branding.md?raw'
@@ -192,6 +193,9 @@ export const LEARN_CATEGORIES: LearnCategory[] = [
         summary: {
           en: 'From GitHub to Notion: consistent avatar + favicon combos for creators.',
           ko: 'GitHub부터 Notion까지, 아바타와 파비콘을 맞추는 크리에이터 브랜딩 팁입니다.',
+        },
+        bodyMarkdown: {
+          en: aiAvatarsPersonalBrandingEn,
         },
       },
     ],
