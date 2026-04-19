@@ -10,6 +10,7 @@ import faviconBrandingEn from './bodies/en/favicon-branding.md?raw'
 import faviconFileFormatsEn from './bodies/en/favicon-file-formats.md?raw'
 import faviconFromPhotoEn from './bodies/en/favicon-from-photo.md?raw'
 import faviconSizesEn from './bodies/en/favicon-sizes.md?raw'
+import portraitTipsAiAvatarEn from './bodies/en/portrait-tips-ai-avatar.md?raw'
 import whatIsAFaviconEn from './bodies/en/what-is-a-favicon.md?raw'
 import whatIsDigitalAvatarEn from './bodies/en/what-is-digital-avatar.md?raw'
 import addFaviconHtmlKo from './bodies/ko/add-favicon-html.md?raw'
@@ -237,6 +238,9 @@ export const LEARN_CATEGORIES: LearnCategory[] = [
         summary: {
           en: 'Lighting, framing, and resolution tips before you hit generate.',
           ko: '생성 전 조명·구도·해상도 등 촬영 팁을 정리했습니다.',
+        },
+        bodyMarkdown: {
+          en: portraitTipsAiAvatarEn,
         },
       },
       {
