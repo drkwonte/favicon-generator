@@ -2,6 +2,7 @@
  * Learn hub: SEO/GEO-oriented articles grouped by category.
  * Copy lives here (en/ko titles); long-form body can be filled in later per article.
  */
+import faviconFileFormatsEn from './bodies/en/favicon-file-formats.md?raw'
 import whatIsAFaviconEn from './bodies/en/what-is-a-favicon.md?raw'
 import whatIsAFaviconKo from './bodies/ko/what-is-a-favicon.md?raw'
 
@@ -62,6 +63,9 @@ export const LEARN_CATEGORIES: LearnCategory[] = [
         summary: {
           en: 'When to use ICO, PNG, or SVG favicons and how browsers pick them.',
           ko: 'ICO·PNG·SVG 파비콘의 차이와 브라우저 선택 방식을 비교합니다.',
+        },
+        bodyMarkdown: {
+          en: faviconFileFormatsEn,
         },
       },
       {
