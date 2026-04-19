@@ -3,6 +3,7 @@
  * Copy lives here (en/ko titles); long-form body can be filled in later per article.
  */
 import addFaviconHtmlEn from './bodies/en/add-favicon-html.md?raw'
+import aiPhotoTo3dAvatarEn from './bodies/en/ai-photo-to-3d-avatar.md?raw'
 import faviconBrandingEn from './bodies/en/favicon-branding.md?raw'
 import faviconFileFormatsEn from './bodies/en/favicon-file-formats.md?raw'
 import faviconSizesEn from './bodies/en/favicon-sizes.md?raw'
@@ -141,6 +142,9 @@ export const LEARN_CATEGORIES: LearnCategory[] = [
         summary: {
           en: 'Pipeline overview from portrait crop to stylized output—built for generative search.',
           ko: '크롭부터 스타일 출력까지 파이프라인을 개요로 설명해 생성형 검색에도 대응합니다.',
+        },
+        bodyMarkdown: {
+          en: aiPhotoTo3dAvatarEn,
         },
       },
       {
